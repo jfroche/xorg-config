@@ -190,9 +190,9 @@ bindsym Control+Mod1+l exec ~/.i3/lock.sh
 #exec --no-startup-id dunst -config /home/jfroche/.dunstrc
 exec i3-msg 'exec /usr/bin/slack'
 exec i3-msg 'exec /opt/viber/Viber'
-exec --no-startup-id i3-msg 'exec google-chrome --incognito --start-fullscreen --app=http://dashboard.affinitic.be/'
-#exec --no-startup-id i3-msg 'exec google-chrome --start-fullscreen --app=https://mightytext.net/web8/'
-exec i3-msg 'exec google-chrome --user-data'
+exec --no-startup-id i3-msg 'exec google-chrome-stable --incognito --start-fullscreen --app=http://dashboard.affinitic.be/'
+#exec --no-startup-id i3-msg 'exec google-chrome-stable --start-fullscreen --app=https://mightytext.net/web8/'
+exec i3-msg 'exec google-chrome-stable --user-data'
 exec --no-startup-id i3-msg "exec urxvt -name base -e zsh"
 exec --no-startup-id i3-msg "exec /usr/bin/keepass2"
 exec --no-startup-id i3-msg "exec /opt/toggldesktop/TogglDesktop"
@@ -232,7 +232,7 @@ focus_follows_mouse no
 bindsym XF86AudioLowerVolume exec amixer -c 0 set Master 5-
 bindsym XF86AudioRaiseVolume exec amixer -c 0 set Speaker 5+
 
-bindsym $mod+b exec google-chrome
+bindsym $mod+b exec google-chrome-stable
 bindsym $mod+u exec scrot '%Y-%m-%d_$wx$h_scrot.png' -s -e 'mv $f /tmp'
 
 #gaps inner 8
