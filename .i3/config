@@ -163,7 +163,7 @@ bar {
         #status_command i3status
         font pango:Tewi, Icons 11
         #height 20
-        status_command python3 ~/.i3/bar.py
+        status_command i3pystatus -c ~/.i3/bar.py
         #colors {
         #}
         colors {
